@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Empty as it comes. For the Träwelling sign-in in the browser, add the host named in
+	     JordDev/Setup.swift, so that iOS hands the redirect back to the app:
+
+	     <key>com.apple.developer.associated-domains</key>
+	     <array>
+	         <string>webcredentials:your.host.example</string>
+	     </array>
+	-->
+</dict>
+</plist>

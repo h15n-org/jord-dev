@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Merged into the generated Info.plist. -->
+	<!-- Asked for when the user switches on Profil, Kalender. Full access, because Jord changes and
+	     removes the events it wrote, and lists the calendars to choose from. -->
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Jord trägt deine Reisen in den Kalender ein, den du auswählst, und hält diese Termine aktuell.</string>
+	<!-- Jord encrypts nothing itself; it only talks HTTPS through the system. -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>
