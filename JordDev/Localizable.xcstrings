@@ -1,7 +1,669 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    " (Check-in %@)" : {
 
+    },
+    "%@ – %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ – %2$@"
+          }
+        }
+      }
+    },
+    "%@ %@, Gl. %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@, Gl. %3$@"
+          }
+        }
+      }
+    },
+    "%@ → %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ → %2$@"
+          }
+        }
+      }
+    },
+    "%@ In Jord wurde nichts gelöscht." : {
+
+    },
+    "%@ Richtung %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Richtung %2$@"
+          }
+        }
+      }
+    },
+    "%lld frühere Reisen in den Kalender eintragen?" : {
+
+    },
+    "%lld Kilometer pro Stunde" : {
+
+    },
+    "%lld min vor Abfahrt" : {
+
+    },
+    "%lld Minuten früher" : {
+
+    },
+    "%lld Minuten später" : {
+
+    },
+    "%lld Zwischenhalte" : {
+
+    },
+    "1 Zwischenhalt" : {
+
+    },
+    "ab" : {
+
+    },
+    "ab %@, %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "ab %1$@, %2$@"
+          }
+        }
+      }
+    },
+    "Abbrechen" : {
+
+    },
+    "Abfahrt" : {
+
+    },
+    "Abfahrt ab" : {
+
+    },
+    "Abfahrten" : {
+
+    },
+    "Abfahrten ab" : {
+
+    },
+    "Alle" : {
+
+    },
+    "an" : {
+
+    },
+    "An Träwelling senden" : {
+
+    },
+    "Aus" : {
+
+    },
+    "Automatisch einchecken" : {
+
+    },
+    "Bahnhof" : {
+
+    },
+    "Bahnhof wählen" : {
+
+    },
+    "Bahnhöfe in der Nähe" : {
+
+    },
+    "Baureihe %@" : {
+
+    },
+    "Bei Träwelling ansehen" : {
+
+    },
+    "Bei Träwelling eingecheckt" : {
+
+    },
+    "Bei Träwelling gelöschte Check-ins lassen sich nicht wiederherstellen." : {
+
+    },
+    "Bei Träwelling nicht gelöscht" : {
+
+    },
+    "Bei Träwelling steht noch das alte Ziel: %@" : {
+
+    },
+    "Bei Träwelling steht noch das alte Ziel. Verbinde dein Konto im Profil, um es zu ändern." : {
+
+    },
+    "Beim Einchecken" : {
+
+    },
+    "Bereits eingetragene Termine bleiben in ihrem Kalender, auch wenn du hier wechselst oder das Eintragen ausschaltest. Jord liest deine anderen Termine nicht." : {
+
+    },
+    "bis %@" : {
+
+    },
+    "Check-in %@ bei Träwelling gelöscht." : {
+
+    },
+    "Check-in %@ nicht gelöscht: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Check-in %1$@ nicht gelöscht: %2$@"
+          }
+        }
+      }
+    },
+    "Check-ins" : {
+
+    },
+    "Check-ins bleiben in Jord. Einzelne Reisen kannst du später senden." : {
+
+    },
+    "Checke unter Abfahrten in eine Fahrt ein, dann erscheint sie hier." : {
+
+    },
+    "Daten" : {
+
+    },
+    "Dein Ausstieg" : {
+
+    },
+    "Der Kalender ändert nichts an deinem Reisetagebuch. Was du selbst am Termin änderst, überschreibt Jord, sobald sich die Reise ändert." : {
+
+    },
+    "Die Abfahrten konnten nicht geladen werden." : {
+
+    },
+    "Die Anmeldung bei Träwelling ist fehlgeschlagen. Versuche es noch einmal." : {
+
+    },
+    "Die Antwort von Träwelling hatte ein unerwartetes Format." : {
+
+    },
+    "Die Bahnhöfe konnten nicht geladen werden." : {
+
+    },
+    "Die Fahrt endet dann an diesem Halt, auch bei Träwelling." : {
+
+    },
+    "Die Fahrt endet dann an diesem Halt." : {
+
+    },
+    "Die Halte konnten nicht geladen werden." : {
+
+    },
+    "Die neue Fahrt beginnt, bevor die alte endet." : {
+
+    },
+    "Die neue Fahrt kommt ins Reisetagebuch. An Träwelling geht sie erst, wenn die alte Fahrt korrigiert ist." : {
+
+    },
+    "Diese Reise ist auch bei Träwelling eingecheckt." : {
+
+    },
+    "Diese Reise löschen?" : {
+
+    },
+    "Dieser Zug endet hier." : {
+
+    },
+    "Dort legst du auch fest, ob Jord jeden Check-in ohne Nachfrage an Träwelling sendet, jedes Mal fragt oder nichts sendet, und wer deine Check-ins sehen darf." : {
+
+    },
+    "Du bist noch in %@ nach %@ eingecheckt." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Du bist noch in %1$@ nach %2$@ eingecheckt."
+          }
+        }
+      }
+    },
+    "Du hast Jord den Zugriff bei Träwelling nicht erlaubt." : {
+
+    },
+    "Ein" : {
+
+    },
+    "Einchecken" : {
+
+    },
+    "Einchecken + Träwelling" : {
+
+    },
+    "Einchecken, Träwelling, Kalender" : {
+
+    },
+    "Eine frühere Reise in den Kalender eintragen?" : {
+
+    },
+    "Eine Reise löschst du auf ihrer Seite über den Papierkorb oder in der Liste mit einem Wisch nach links." : {
+
+    },
+    "Eingabe löschen" : {
+
+    },
+    "Eingecheckt" : {
+
+    },
+    "Eingecheckt: Träwelling hat Check-in %@ angelegt." : {
+
+    },
+    "Eingetragen von Jord" : {
+
+    },
+    "Einstellungen öffnen" : {
+
+    },
+    "Eintragen" : {
+
+    },
+    "Entfernen" : {
+
+    },
+    "Erinnerung" : {
+
+    },
+    "Erstelle den Token bei Träwelling unter „Deine Anwendungen“ mit „Token generieren“ und füge ihn hier ein. Jord speichert ihn im Schlüsselbund dieses Geräts." : {
+
+    },
+    "Fahrplan und Echtzeit" : {
+
+    },
+    "Fahrt" : {
+
+    },
+    "Fahrt hier beenden" : {
+
+    },
+    "Fällt aus" : {
+
+    },
+    "Fernverkehr" : {
+
+    },
+    "Frühere Abfahrten" : {
+
+    },
+    "Frühere Reisen eintragen" : {
+
+    },
+    "Füge zuerst deinen Zugangstoken ein." : {
+
+    },
+    "Für Bahnhöfe in der Nähe kannst du Jord in den Einstellungen den Standort erlauben." : {
+
+    },
+    "Geodaten" : {
+
+    },
+    "Gl. %@" : {
+
+    },
+    "Halt in" : {
+
+    },
+    "Hier aussteigen" : {
+
+    },
+    "Hilfe und FAQ" : {
+
+    },
+    "Im WIFIonICE fragt Jord das Portal des Zuges nach Geschwindigkeit, nächstem Halt und Verspätung und zeigt sie unter „Live aus dem Zug“. Bist du in den Zug eingecheckt, siehst du auch, wie weit es noch bis zu deinem Ausstieg ist." : {
+
+    },
+    "In %@ ausgestiegen" : {
+
+    },
+    "In %@ aussteigen" : {
+
+    },
+    "In %@ aussteigen?" : {
+
+    },
+    "In der Nähe" : {
+
+    },
+    "In Jord und bei Träwelling löschen" : {
+
+    },
+    "Jede Reise wird ein Termin an ihrem Tag. Löschen kannst du sie danach nur einzeln im Kalender oder indem du die Reise in Jord löschst." : {
+
+    },
+    "Jeder Check-in geht ohne Nachfrage mit dieser Sichtbarkeit zu Träwelling." : {
+
+    },
+    "Jedes Mal nachfragen" : {
+
+    },
+    "Jord darf nicht auf deinen Kalender zugreifen. Erlaube in den Einstellungen den vollen Zugriff, damit Jord seine Termine auch ändern kann." : {
+
+    },
+    "Jord fragt bei jedem Check-in, ob die Fahrt auch zu Träwelling soll. Die Sichtbarkeit ist dort vorausgewählt." : {
+
+    },
+    "Jord ist freie Software und wird ohne jede Gewährleistung bereitgestellt." : {
+
+    },
+    "Jord ist Norwegisch für Erde oder Boden und in Asgard der Name der Mutter von Meili, „Reise“." : {
+
+    },
+    "Jord trägt jede Reise ein, in die du eincheckst: mit Zug, Zeiten und Gleisen. Ändert sich die Reise in Jord, ändert sich der Termin. Löschst du sie, verschwindet er." : {
+
+    },
+    "Jord trägt Reisen ab dem Tag ein, an dem du das Eintragen eingeschaltet hast. %lld frühere Reisen aus deinem Reisetagebuch stehen nicht im Kalender." : {
+
+    },
+    "Jord trägt Reisen ab dem Tag ein, an dem du das Eintragen eingeschaltet hast. Eine frühere Reise aus deinem Reisetagebuch steht nicht im Kalender." : {
+
+    },
+    "Jord zeigt die Fahrt mit allen Halten. Mit „Einchecken“ kommt sie in dein Reisetagebuch unter „Meine Reisen“." : {
+
+    },
+    "Kalender" : {
+
+    },
+    "Kein Bahnhof gefunden" : {
+
+    },
+    "Keine" : {
+
+    },
+    "Keine Abfahrten gefunden" : {
+
+    },
+    "Keine Fahrt ausgewählt" : {
+
+    },
+    "Keine Reise ausgewählt" : {
+
+    },
+    "Keine Verbindung zum Fahrplan" : {
+
+    },
+    "Keine weiteren Halte" : {
+
+    },
+    "Live aus dem Zug" : {
+
+    },
+    "Lizenz" : {
+
+    },
+    "Löschst du eine Reise, die auch bei Träwelling steht, fragt Jord, wo sie gelöscht werden soll." : {
+
+    },
+    "Meine Reisen" : {
+
+    },
+    "Melde dich bei Träwelling an und erlaube Jord, deine Check-ins zu lesen und zu schreiben." : {
+
+    },
+    "Mit Träwelling verbinden" : {
+
+    },
+    "nach %@" : {
+
+    },
+    "Nächster Halt" : {
+
+    },
+    "Nicht bei Träwelling eingecheckt: Dort überschneidet sich die Fahrt mit einem anderen Check-in (%@, %@ – %@)." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Nicht bei Träwelling eingecheckt: Dort überschneidet sich die Fahrt mit einem anderen Check-in (%1$@, %2$@ – %3$@)."
+          }
+        }
+      }
+    },
+    "Nicht einchecken" : {
+
+    },
+    "Nicht eingecheckt: %@" : {
+
+    },
+    "Nicht verbunden" : {
+
+    },
+    "noch %@" : {
+
+    },
+    "Noch keine Reisen" : {
+
+    },
+    "Noch nicht an Träwelling gesendet: Dort läuft noch der Check-in für %@ nach %@." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Noch nicht an Träwelling gesendet: Dort läuft noch der Check-in für %1$@ nach %2$@."
+          }
+        }
+      }
+    },
+    "Nur angemeldete Nutzer" : {
+
+    },
+    "Nur bei Träwelling löschen" : {
+
+    },
+    "Nur Follower" : {
+
+    },
+    "Nur in Jord einchecken" : {
+
+    },
+    "Nur in Jord löschen" : {
+
+    },
+    "Öffentlich" : {
+
+    },
+    "OK" : {
+
+    },
+    "Privat" : {
+
+    },
+    "Profil" : {
+
+    },
+    "Prüfe die Schreibweise oder suche nach einem anderen Namen." : {
+
+    },
+    "Quellcode" : {
+
+    },
+    "Regional" : {
+
+    },
+    "Reise löschen" : {
+
+    },
+    "Reisen in den Kalender eintragen" : {
+
+    },
+    "Richtung %@" : {
+
+    },
+    "Schließen" : {
+
+    },
+    "Sichtbarkeit" : {
+
+    },
+    "Sichtbarkeit bei Träwelling" : {
+
+    },
+    "Spätere Abfahrten" : {
+
+    },
+    "Stattdessen mit Zugangstoken verbinden" : {
+
+    },
+    "Steigst du früher oder später aus als geplant, beendest du die Fahrt dort mit „Hier aussteigen“. Der Check-in bei Träwelling wird angepasst." : {
+
+    },
+    "Suche nicht möglich" : {
+
+    },
+    "Token bei Träwelling erstellen" : {
+
+    },
+    "Träwelling" : {
+
+    },
+    "Träwelling hat den Token abgelehnt. Prüfe, ob er vollständig und noch gültig ist." : {
+
+    },
+    "Träwelling hat die Anmeldung abgelehnt. Verbinde dein Konto im Profil neu." : {
+
+    },
+    "Träwelling hat für %@ schon einen Check-in zur selben Zeit." : {
+
+    },
+    "Träwelling hat mit Fehler %lld geantwortet." : {
+
+    },
+    "Träwelling hat mit Fehler %lld geantwortet. Versuche es später noch einmal." : {
+
+    },
+    "Träwelling hatte diese Fahrt schon: Check-in %@ übernommen." : {
+
+    },
+    "Träwelling ist nicht erreichbar." : {
+
+    },
+    "Träwelling ist nicht erreichbar. Prüfe deine Internetverbindung." : {
+
+    },
+    "Träwelling kennt %@ oder einen der beiden Bahnhöfe nicht." : {
+
+    },
+    "Träwelling-Protokoll" : {
+
+    },
+    "Trotzdem einchecken" : {
+
+    },
+    "Tz %@" : {
+
+    },
+    "Über Jord" : {
+
+    },
+    "Ungelistet" : {
+
+    },
+    "Unter Profil → Kalender schaltest du das Eintragen ein und wählst den Kalender. Jord trägt jede Reise ein, in die du eincheckst, und hält den Termin aktuell." : {
+
+    },
+    "Unter Profil → Träwelling tippst du auf „Mit Träwelling verbinden“ und meldest dich auf der Seite von Träwelling an. Jord sieht dein Passwort dabei nicht. Wer lieber einen Zugangstoken einfügt, erstellt ihn auf [traewelling.de](https://traewelling.de/settings/applications) unter „Deine Anwendungen“ mit „Token generieren“." : {
+
+    },
+    "Verbinden" : {
+
+    },
+    "Verbindung trennen" : {
+
+    },
+    "Verbunden als" : {
+
+    },
+    "Version %@" : {
+
+    },
+    "Versuche eine andere Zeit oder andere Züge." : {
+
+    },
+    "Von" : {
+
+    },
+    "Wähle eine Reise aus, um ihre Halte zu sehen." : {
+
+    },
+    "Wähle einen Bahnhof, einen Zug und deinen Ausstieg, um die Fahrt zu sehen." : {
+
+    },
+    "Wähle unter „Abfahrten“ den Bahnhof, an dem du einsteigst, und tippe auf „Abfahrten“. Tippe auf deinen Zug und dann auf den Halt, an dem du aussteigst." : {
+
+    },
+    "Was zeigt Jord im WLAN des Zuges?" : {
+
+    },
+    "Website" : {
+
+    },
+    "Wenn du in %@ ausgestiegen bist, endet %@ dort, auch bei Träwelling." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Wenn du in %1$@ ausgestiegen bist, endet %2$@ dort, auch bei Träwelling."
+          }
+        }
+      }
+    },
+    "Wenn du in %@ ausgestiegen bist, endet %@ dort." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Wenn du in %1$@ ausgestiegen bist, endet %2$@ dort."
+          }
+        }
+      }
+    },
+    "Wie arbeitet Jord mit Träwelling zusammen?" : {
+
+    },
+    "Wie checke ich in eine Fahrt ein?" : {
+
+    },
+    "Wie kommen meine Reisen in den Kalender?" : {
+
+    },
+    "Wird an Träwelling gesendet …" : {
+
+    },
+    "Wo steigst du aus?" : {
+
+    },
+    "Ziel von Check-in %@ auf %@ geändert." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Ziel von Check-in %1$@ auf %2$@ geändert."
+          }
+        }
+      }
+    },
+    "Zugangstoken" : {
+
+    },
+    "Zugangstoken ausblenden" : {
+
+    },
+    "Züge" : {
+
+    },
+    "Zuletzt" : {
+
+    }
   },
   "version" : "1.0"
 }
