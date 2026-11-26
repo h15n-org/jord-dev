@@ -16,7 +16,8 @@ struct BoardView: View {
     }
 
     @State private var station: Station?
-    @State private var date = Date.now
+    /// The departure time that was picked. Nil is now: the board then opens at the moment it is asked for.
+    @State private var pickedDate: Date?
     @State private var ride: JourneyDraft?
     @State private var selection: JourneyDraft.ID?
     @State private var picking: Field?
@@ -167,7 +168,7 @@ struct BoardView: View {
         }
         .sheet(item: $board) { station in
             DepartureBoardSheet(
-                station: station, time: max(date, .now.addingTimeInterval(-120))
+                station: station, time: max(pickedDate ?? .now, .now.addingTimeInterval(-120))
             ) { journey in
                 ride = journey
                 selection = journey.id
@@ -216,12 +217,36 @@ struct BoardView: View {
             }
             .buttonStyle(.plain)
             Hairline()
-            DatePicker("Abfahrt", selection: $date)
-                .foregroundStyle(Theme.ink)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 8)
+            departureField
         }
         .card()
+    }
+
+    /// The departure time. It runs along with the clock until one is picked; "Jetzt" lets go of
+    /// the picked one again.
+    private var departureField: some View {
+        TimelineView(.everyMinute) { clock in
+            HStack(spacing: 8) {
+                Text("Abfahrt")
+                Spacer()
+                if pickedDate != nil {
+                    Button("Jetzt") { pickedDate = nil }
+                        .font(.subheadline.weight(.semibold))
+                        .padding(.horizontal, 12)
+                        .frame(minHeight: 34)
+                        .overlay { Capsule().strokeBorder(Theme.hairline, lineWidth: 1) }
+                        .contentShape(.capsule)
+                        .buttonStyle(.plain)
+                }
+                DatePicker("Abfahrt", selection: Binding(
+                    get: { pickedDate ?? clock.date },
+                    set: { pickedDate = $0 }))
+                    .labelsHidden()
+            }
+            .foregroundStyle(Theme.ink)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 8)
+        }
     }
 
     private func checkIn(_ draft: JourneyDraft) {
