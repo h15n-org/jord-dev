@@ -73,7 +73,7 @@ struct ICEPortalClient: Sendable {
     init() {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0"
         let configuration = URLSessionConfiguration.ephemeral
-        configuration.httpAdditionalHeaders = ["User-Agent": "JordDev/\(version)", "Accept": "application/json"]
+        configuration.httpAdditionalHeaders = ["User-Agent": "Jord/\(version) (+https://github.com/h15n-org/jord-dev)", "Accept": "application/json"]
         configuration.timeoutIntervalForRequest = 8
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         session = URLSession(configuration: configuration)

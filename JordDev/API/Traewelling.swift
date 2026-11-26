@@ -9,7 +9,7 @@ import Foundation
 struct TraewellingClient: Sendable {
     static let tokenAccount = "traewelling-token"
     static var userAgent: String {
-        "JordDev/\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0")"
+        "Jord/\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0") (+https://github.com/h15n-org/jord-dev)"
     }
 
     let token: String

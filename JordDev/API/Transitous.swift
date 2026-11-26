@@ -17,7 +17,7 @@ struct TransitousClient: Sendable {
     init() {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0"
         let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = ["User-Agent": "JordDev/\(version) (\(Setup.contact))"]
+        configuration.httpAdditionalHeaders = ["User-Agent": "Jord/\(version) (+https://github.com/h15n-org/jord-dev; \(Setup.contact))"]
         configuration.timeoutIntervalForRequest = 20
         session = URLSession(configuration: configuration)
     }
