@@ -24,6 +24,8 @@ struct BoardView: View {
     @State private var checkIns = 0
     @State private var board: Station?
     @State private var boardNext: Station?
+    /// The stations offered before a ride is picked.
+    @State private var recents = RecentStations.all
     @State private var checkingIn: JourneyDraft?
     @State private var clash: Clash?
 
@@ -85,6 +87,10 @@ struct BoardView: View {
                 .paperRow()
                 .selectionDisabled()
 
+                if ride == nil {
+                    starts
+                }
+
                 ForEach(ride.map { [$0] } ?? []) { draft in
                     JourneyRow(
                         draft: draft, showsDate: false,
@@ -110,6 +116,7 @@ struct BoardView: View {
                 ) { picked in
                     station = picked
                     RecentStations.record(picked)
+                    recents = RecentStations.all
                     if field == .board { boardNext = picked }
                 }
             }
@@ -188,7 +195,7 @@ struct BoardView: View {
                 .scaledToFit()
                 .frame(width: 64, height: 64)
                 .accessibilityHidden(true)
-            Text(verbatim: "Jord Dev")
+            Text(verbatim: "Jord \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0")")
                 .font(.system(size: 40, weight: .medium, design: .serif))
                 .foregroundStyle(Theme.ink)
         }
@@ -247,6 +254,42 @@ struct BoardView: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
         }
+    }
+
+    /// Where the latest journey that has set off ends, unless the stations used lately
+    /// already offer it.
+    private var lastDestination: StopDraft? {
+        let now = Date.now
+        let stop = journeys.filter { $0.departure <= now }.max { $0.arrival < $1.arrival }?
+            .legs.max { $0.index < $1.index }?.draft?.destination
+        guard let stop, !recents.prefix(4).contains(where: { $0.name == stop.name }) else { return nil }
+        return stop
+    }
+
+    /// What the page offers before a ride is picked: the stations used lately and the ones
+    /// nearby, each one tap from its departures.
+    @ViewBuilder private var starts: some View {
+        if !recents.isEmpty {
+            StartCard(title: "Zuletzt", items: Array(recents.prefix(4)), onPick: open, onRemove: { station in
+                RecentStations.remove(station)
+                recents = RecentStations.all
+            }) { station in
+                StationLabel(station: station)
+            }
+            .paperRow()
+            .selectionDisabled()
+        }
+        NearbyStarts(lastDestination: lastDestination, onPick: open)
+            .paperRow()
+            .selectionDisabled()
+    }
+
+    /// Makes a station the one in the form and shows what leaves from it.
+    private func open(_ picked: Station) {
+        station = picked
+        RecentStations.record(picked)
+        recents = RecentStations.all
+        board = picked
     }
 
     private func checkIn(_ draft: JourneyDraft) {
